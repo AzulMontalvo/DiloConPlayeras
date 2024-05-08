@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            SuspendLayout();
+            this.btnVentpedidos = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
-            // button1
+            // btnVentpedidos
             // 
-            button1.Location = new Point(585, 51);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "Inventario";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.btnVentpedidos.Location = new System.Drawing.Point(451, 26);
+            this.btnVentpedidos.Name = "btnVentpedidos";
+            this.btnVentpedidos.Size = new System.Drawing.Size(94, 29);
+            this.btnVentpedidos.TabIndex = 0;
+            this.btnVentpedidos.Text = "Pedidos";
+            this.btnVentpedidos.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Name = "Form1";
-            Text = "Form1";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVentpedidos);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
 
-        private Button button1;
+        private Button btnVentpedidos;
     }
 }
