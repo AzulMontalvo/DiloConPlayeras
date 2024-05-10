@@ -24,6 +24,9 @@ namespace DiloConPlayeras
 
         private void Catalago_Click(object sender, EventArgs e)
         {
+            Catalago catalago = new Catalago();
+            catalago.Show();
+
 
         }
 
