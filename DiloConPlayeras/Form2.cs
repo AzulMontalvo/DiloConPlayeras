@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace DiloConPlayeras
 {
-    public partial class CrearPedido : Form
+    public partial class Form2 : Form
     {
-        public CrearPedido()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void CrearPedido_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
