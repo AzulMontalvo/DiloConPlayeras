@@ -47,7 +47,7 @@
             // 
             // btnVentpedidos
             // 
-            btnVentpedidos.Location = new Point(455, 3);
+            btnVentpedidos.Location = new Point(537, 3);
             btnVentpedidos.Name = "btnVentpedidos";
             btnVentpedidos.Size = new Size(94, 29);
             btnVentpedidos.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             // Inventario
             // 
-            Inventario.Location = new Point(567, 3);
+            Inventario.Location = new Point(665, 3);
             Inventario.Name = "Inventario";
             Inventario.Size = new Size(94, 29);
             Inventario.TabIndex = 1;
@@ -76,7 +76,7 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(12, 38);
             panel1.Name = "panel1";
-            panel1.Size = new Size(776, 146);
+            panel1.Size = new Size(873, 146);
             panel1.TabIndex = 3;
             // 
             // label3
@@ -141,7 +141,7 @@
             // 
             // Catalago
             // 
-            Catalago.Location = new Point(667, 3);
+            Catalago.Location = new Point(782, 3);
             Catalago.Name = "Catalago";
             Catalago.Size = new Size(94, 29);
             Catalago.TabIndex = 4;
@@ -153,7 +153,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(831, 515);
+            ClientSize = new Size(897, 515);
             Controls.Add(Catalago);
             Controls.Add(panel1);
             Controls.Add(Inventario);
