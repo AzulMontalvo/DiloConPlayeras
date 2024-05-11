@@ -63,5 +63,10 @@ namespace DiloConPlayeras
             inventario.Show();
 
         }
+
+        private void btnVentpedidos_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
