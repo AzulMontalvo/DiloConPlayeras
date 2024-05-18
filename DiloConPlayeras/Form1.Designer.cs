@@ -39,6 +39,7 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             Catalago = new Button();
+            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -148,11 +149,21 @@
             Catalago.UseVisualStyleBackColor = true;
             Catalago.Click += Catalago_Click_1;
             // 
+            // button1
+            // 
+            button1.Location = new Point(389, 305);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 5;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(897, 515);
+            Controls.Add(button1);
             Controls.Add(Catalago);
             Controls.Add(panel1);
             Controls.Add(Inventario);
@@ -179,5 +190,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button button1;
     }
 }
