@@ -63,6 +63,36 @@ namespace DiloConPlayeras.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ima1 {
+            get {
+                object obj = ResourceManager.GetObject("ima1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ima2 {
+            get {
+                object obj = ResourceManager.GetObject("ima2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap suadera_e {
+            get {
+                object obj = ResourceManager.GetObject("suadera_e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2024_05_10_at_4_24_43_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2024-05-10 at 4.24.43 PM", resourceCulture);

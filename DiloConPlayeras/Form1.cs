@@ -11,40 +11,7 @@ namespace DiloConPlayeras
 
        
 
-        private void Catalago_Click(object sender, EventArgs e)
-        {
-            Catalago catalago = new Catalago();
-            catalago.Show();
-
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVentpedidos_Click(object sender, EventArgs e)
-        {
-
-            // Crea una instancia del formulario Form2
-            // CrearPedido pedido = new CrearPedido();
-
-            // Muestra el formulario Form2 como modal
-            //pedido.ShowDialog();
-
-            // En el formulario actual (Form1.cs)
-
-            // Crea una instancia del formulario Form2
-            CrearPedido pedido = new CrearPedido();
-
-            // Muestra el formulario Form2
-            pedido.Show();
-
-
-
-
-        }
+        
 
         private void Inventario_Click(object sender, EventArgs e)
         {
@@ -55,7 +22,7 @@ namespace DiloConPlayeras
 
         private void btnVentpedidos_Click_1(object sender, EventArgs e)
         {
-            Pedidos pedidos = new Pedidos();
+            CrearPedido pedidos = new CrearPedido();
             pedidos.Show();
         }
 
