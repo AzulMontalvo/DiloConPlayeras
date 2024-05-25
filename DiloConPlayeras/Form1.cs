@@ -22,7 +22,7 @@ namespace DiloConPlayeras
 
         private void btnVentpedidos_Click_1(object sender, EventArgs e)
         {
-            CrearPedido pedidos = new CrearPedido();
+            Pedidos pedidos = new Pedidos();
             pedidos.Show();
         }
 
