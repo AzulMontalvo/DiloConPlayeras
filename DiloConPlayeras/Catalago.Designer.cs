@@ -42,15 +42,19 @@
             button8 = new Button();
             button9 = new Button();
             button10 = new Button();
+            panel1 = new Panel();
+            label4 = new Label();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)ImageBox).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // ImageBox
             // 
             ImageBox.Image = Properties.Resources.WhatsApp_Image_2024_05_10_at_4_24_43_PM;
-            ImageBox.Location = new Point(62, 49);
+            ImageBox.Location = new Point(40, 111);
             ImageBox.Name = "ImageBox";
-            ImageBox.Size = new Size(551, 460);
+            ImageBox.Size = new Size(598, 474);
             ImageBox.SizeMode = PictureBoxSizeMode.StretchImage;
             ImageBox.TabIndex = 0;
             ImageBox.TabStop = false;
@@ -59,15 +63,16 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Yellow;
-            label1.Location = new Point(694, 49);
+            label1.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(678, 138);
             label1.Name = "label1";
-            label1.Size = new Size(94, 20);
+            label1.Size = new Size(126, 20);
             label1.TabIndex = 1;
             label1.Text = "SUDADERAS";
             // 
             // button1
             // 
-            button1.Location = new Point(694, 89);
+            button1.Location = new Point(678, 181);
             button1.Name = "button1";
             button1.Size = new Size(115, 29);
             button1.TabIndex = 2;
@@ -77,7 +82,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(694, 140);
+            button2.Location = new Point(678, 231);
             button2.Name = "button2";
             button2.Size = new Size(115, 29);
             button2.TabIndex = 3;
@@ -89,15 +94,16 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Yellow;
-            label2.Location = new Point(873, 49);
+            label2.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(852, 139);
             label2.Name = "label2";
-            label2.Size = new Size(76, 20);
+            label2.Size = new Size(108, 20);
             label2.TabIndex = 4;
             label2.Text = "PLAYERAS";
             // 
             // button3
             // 
-            button3.Location = new Point(852, 89);
+            button3.Location = new Point(852, 181);
             button3.Name = "button3";
             button3.Size = new Size(112, 29);
             button3.TabIndex = 5;
@@ -107,7 +113,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(852, 140);
+            button4.Location = new Point(852, 231);
             button4.Name = "button4";
             button4.Size = new Size(112, 29);
             button4.TabIndex = 6;
@@ -117,7 +123,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(852, 193);
+            button5.Location = new Point(852, 287);
             button5.Name = "button5";
             button5.Size = new Size(112, 29);
             button5.TabIndex = 7;
@@ -127,7 +133,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(852, 240);
+            button6.Location = new Point(852, 341);
             button6.Name = "button6";
             button6.Size = new Size(112, 29);
             button6.TabIndex = 8;
@@ -137,7 +143,7 @@
             // 
             // button7
             // 
-            button7.Location = new Point(852, 297);
+            button7.Location = new Point(852, 396);
             button7.Name = "button7";
             button7.Size = new Size(112, 29);
             button7.TabIndex = 9;
@@ -149,15 +155,16 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Yellow;
-            label3.Location = new Point(1004, 50);
+            label3.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(1014, 138);
             label3.Name = "label3";
-            label3.Size = new Size(90, 20);
+            label3.Size = new Size(124, 20);
             label3.TabIndex = 10;
             label3.Text = "UNIFORMES";
             // 
             // button8
             // 
-            button8.Location = new Point(1004, 89);
+            button8.Location = new Point(1014, 181);
             button8.Name = "button8";
             button8.Size = new Size(102, 29);
             button8.TabIndex = 11;
@@ -167,7 +174,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(1004, 140);
+            button9.Location = new Point(1014, 231);
             button9.Name = "button9";
             button9.Size = new Size(102, 29);
             button9.TabIndex = 12;
@@ -178,7 +185,7 @@
             // 
             // button10
             // 
-            button10.Location = new Point(1004, 193);
+            button10.Location = new Point(1014, 287);
             button10.Name = "button10";
             button10.Size = new Size(102, 29);
             button10.TabIndex = 13;
@@ -186,11 +193,43 @@
             button10.UseVisualStyleBackColor = true;
             button10.MouseHover += UniformeR;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Yellow;
+            panel1.Controls.Add(label4);
+            panel1.Location = new Point(12, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1309, 87);
+            panel1.TabIndex = 14;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(603, 14);
+            label4.Name = "label4";
+            label4.Size = new Size(234, 58);
+            label4.TabIndex = 0;
+            label4.Text = "Catalago";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Yellow;
+            label5.Font = new Font("Verdana", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(1181, 138);
+            label5.Name = "label5";
+            label5.Size = new Size(88, 20);
+            label5.TabIndex = 15;
+            label5.Text = "GORRAS";
+            // 
             // Catalago
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1333, 678);
+            Controls.Add(label5);
+            Controls.Add(panel1);
             Controls.Add(button10);
             Controls.Add(button9);
             Controls.Add(button8);
@@ -208,6 +247,8 @@
             Name = "Catalago";
             Text = "Depotiva";
             ((System.ComponentModel.ISupportInitialize)ImageBox).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -228,5 +269,8 @@
         private Button button8;
         private Button button9;
         private Button button10;
+        private Panel panel1;
+        private Label label4;
+        private Label label5;
     }
 }

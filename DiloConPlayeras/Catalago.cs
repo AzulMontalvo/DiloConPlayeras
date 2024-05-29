@@ -74,5 +74,7 @@ namespace DiloConPlayeras
             ImageBox.Image = DiloConPlayeras.Properties.Resources.u3;
 
         }
+
+        
     }
 }
