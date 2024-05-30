@@ -47,17 +47,18 @@
             // 
             // btnVentpedidos
             // 
-            btnVentpedidos.Location = new Point(537, 3);
+            btnVentpedidos.BackColor = Color.White;
+            btnVentpedidos.Location = new Point(551, 12);
             btnVentpedidos.Name = "btnVentpedidos";
             btnVentpedidos.Size = new Size(94, 29);
             btnVentpedidos.TabIndex = 0;
             btnVentpedidos.Text = "Pedidos";
-            btnVentpedidos.UseVisualStyleBackColor = true;
+            btnVentpedidos.UseVisualStyleBackColor = false;
             btnVentpedidos.Click += btnVentpedidos_Click_1;
             // 
             // Inventario
             // 
-            Inventario.Location = new Point(665, 3);
+            Inventario.Location = new Point(665, 12);
             Inventario.Name = "Inventario";
             Inventario.Size = new Size(94, 29);
             Inventario.TabIndex = 1;
@@ -74,26 +75,26 @@
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(12, 38);
+            panel1.Location = new Point(12, 59);
             panel1.Name = "panel1";
-            panel1.Size = new Size(873, 146);
+            panel1.Size = new Size(873, 179);
             panel1.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Franklin Gothic Medium", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(164, 39);
+            label3.Location = new Point(165, 71);
             label3.Name = "label3";
-            label3.Size = new Size(313, 38);
+            label3.Size = new Size(538, 54);
             label3.TabIndex = 10;
             label3.Text = "DILO CON PLAYERAS ";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(601, 52);
+            label2.Location = new Point(745, 52);
             label2.Name = "label2";
             label2.Size = new Size(101, 20);
             label2.TabIndex = 9;
@@ -102,7 +103,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(589, 16);
+            label1.Location = new Point(680, 16);
             label1.Name = "label1";
             label1.Size = new Size(184, 20);
             label1.TabIndex = 8;
@@ -111,7 +112,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(555, 52);
+            pictureBox3.Location = new Point(709, 52);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(30, 33);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -121,7 +122,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(555, 16);
+            pictureBox2.Location = new Point(653, 6);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(30, 30);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -133,14 +134,14 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(20, 16);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(107, 94);
+            pictureBox1.Size = new Size(128, 118);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
             // Catalago
             // 
-            Catalago.Location = new Point(782, 3);
+            Catalago.Location = new Point(782, 12);
             Catalago.Name = "Catalago";
             Catalago.Size = new Size(94, 29);
             Catalago.TabIndex = 4;

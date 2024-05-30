@@ -17,6 +17,21 @@ namespace DiloConPlayeras
             InitializeComponent();
         }
 
+        private void Inventario_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Productos productos = new Productos();
+            productos.Show();
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Proveedores proveedores = new Proveedores();
+            proveedores.Show();
+        }
     }
 }
