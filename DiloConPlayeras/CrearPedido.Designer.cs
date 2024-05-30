@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label TitCrearPedido;
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardarPedido = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtidPedido = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,35 +39,37 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtnombreCliente = new System.Windows.Forms.TextBox();
+            this.txtdireccionCliente = new System.Windows.Forms.TextBox();
+            this.txtciudadCliente = new System.Windows.Forms.TextBox();
+            this.txtfechaPedido = new System.Windows.Forms.TextBox();
+            this.txttelefonoCliente = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtAnticipo = new System.Windows.Forms.TextBox();
+            this.txtRestante = new System.Windows.Forms.TextBox();
+            this.txtHora = new System.Windows.Forms.TextBox();
+            this.txtFechaEntrega = new System.Windows.Forms.TextBox();
+            this.txtRFCCliente = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtIVA = new System.Windows.Forms.TextBox();
+            this.txtSubtotal = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBoxBordado = new System.Windows.Forms.CheckBox();
+            this.checkBoxSerigrafia = new System.Windows.Forms.CheckBox();
+            this.checkBoxVinil = new System.Windows.Forms.CheckBox();
+            this.checkBoxConfeccion = new System.Windows.Forms.CheckBox();
+            this.checkBoxSublimado = new System.Windows.Forms.CheckBox();
+            this.checkBoxDTF = new System.Windows.Forms.CheckBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             TitCrearPedido = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // TitCrearPedido
@@ -80,14 +82,15 @@
             TitCrearPedido.TabIndex = 4;
             TitCrearPedido.Text = "Pedido Nuevo";
             // 
-            // button1
+            // btnGuardarPedido
             // 
-            this.button1.Location = new System.Drawing.Point(669, 999);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGuardarPedido.Location = new System.Drawing.Point(669, 999);
+            this.btnGuardarPedido.Name = "btnGuardarPedido";
+            this.btnGuardarPedido.Size = new System.Drawing.Size(94, 29);
+            this.btnGuardarPedido.TabIndex = 0;
+            this.btnGuardarPedido.Text = "Guardar";
+            this.btnGuardarPedido.UseVisualStyleBackColor = true;
+            this.btnGuardarPedido.Click += new System.EventHandler(this.btnGuardarPedido_Click);
             // 
             // label1
             // 
@@ -99,12 +102,13 @@
             this.label1.Text = "Orden de Pedido No.";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtidPedido
             // 
-            this.textBox1.Location = new System.Drawing.Point(245, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(457, 27);
-            this.textBox1.TabIndex = 2;
+            this.txtidPedido.Location = new System.Drawing.Point(245, 136);
+            this.txtidPedido.Name = "txtidPedido";
+            this.txtidPedido.Size = new System.Drawing.Size(457, 27);
+            this.txtidPedido.TabIndex = 2;
+            this.txtidPedido.TextChanged += new System.EventHandler(this.txtidPedido_TextChanged);
             // 
             // panel1
             // 
@@ -145,7 +149,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(86, 332);
+            this.label5.Location = new System.Drawing.Point(86, 425);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 20);
             this.label5.TabIndex = 7;
@@ -154,7 +158,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(86, 383);
+            this.label6.Location = new System.Drawing.Point(86, 331);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 20);
             this.label6.TabIndex = 8;
@@ -163,47 +167,50 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(86, 430);
+            this.label7.Location = new System.Drawing.Point(86, 378);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 20);
             this.label7.TabIndex = 9;
             this.label7.Text = "RFC";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox2
+            // txtnombreCliente
             // 
-            this.textBox2.Location = new System.Drawing.Point(245, 183);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(457, 27);
-            this.textBox2.TabIndex = 10;
+            this.txtnombreCliente.Location = new System.Drawing.Point(245, 183);
+            this.txtnombreCliente.Name = "txtnombreCliente";
+            this.txtnombreCliente.Size = new System.Drawing.Size(457, 27);
+            this.txtnombreCliente.TabIndex = 10;
+            this.txtnombreCliente.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtdireccionCliente
             // 
-            this.textBox3.Location = new System.Drawing.Point(245, 232);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(457, 27);
-            this.textBox3.TabIndex = 11;
+            this.txtdireccionCliente.Location = new System.Drawing.Point(245, 232);
+            this.txtdireccionCliente.Name = "txtdireccionCliente";
+            this.txtdireccionCliente.Size = new System.Drawing.Size(457, 27);
+            this.txtdireccionCliente.TabIndex = 11;
             // 
-            // textBox4
+            // txtciudadCliente
             // 
-            this.textBox4.Location = new System.Drawing.Point(245, 283);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(457, 27);
-            this.textBox4.TabIndex = 12;
+            this.txtciudadCliente.Location = new System.Drawing.Point(245, 283);
+            this.txtciudadCliente.Name = "txtciudadCliente";
+            this.txtciudadCliente.Size = new System.Drawing.Size(457, 27);
+            this.txtciudadCliente.TabIndex = 12;
             // 
-            // textBox5
+            // txtfechaPedido
             // 
-            this.textBox5.Location = new System.Drawing.Point(245, 332);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(457, 27);
-            this.textBox5.TabIndex = 13;
+            this.txtfechaPedido.Location = new System.Drawing.Point(245, 425);
+            this.txtfechaPedido.Name = "txtfechaPedido";
+            this.txtfechaPedido.Size = new System.Drawing.Size(457, 27);
+            this.txtfechaPedido.TabIndex = 13;
             // 
-            // textBox6
+            // txttelefonoCliente
             // 
-            this.textBox6.Location = new System.Drawing.Point(245, 383);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(457, 27);
-            this.textBox6.TabIndex = 14;
+            this.txttelefonoCliente.Location = new System.Drawing.Point(245, 331);
+            this.txttelefonoCliente.Name = "txttelefonoCliente";
+            this.txttelefonoCliente.Size = new System.Drawing.Size(457, 27);
+            this.txttelefonoCliente.TabIndex = 14;
+            this.txttelefonoCliente.TextChanged += new System.EventHandler(this.txttelefonoCliente_TextChanged);
+            this.txttelefonoCliente.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txttelefonoCliente_KeyDown);
             // 
             // label8
             // 
@@ -223,44 +230,44 @@
             this.label9.TabIndex = 16;
             this.label9.Text = "Restante";
             // 
-            // textBox7
+            // txtAnticipo
             // 
-            this.textBox7.Location = new System.Drawing.Point(180, 784);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(211, 27);
-            this.textBox7.TabIndex = 17;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.txtAnticipo.Location = new System.Drawing.Point(180, 784);
+            this.txtAnticipo.Name = "txtAnticipo";
+            this.txtAnticipo.Size = new System.Drawing.Size(211, 27);
+            this.txtAnticipo.TabIndex = 17;
+            this.txtAnticipo.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
-            // textBox8
+            // txtRestante
             // 
-            this.textBox8.Location = new System.Drawing.Point(486, 784);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(211, 27);
-            this.textBox8.TabIndex = 18;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.txtRestante.Location = new System.Drawing.Point(486, 784);
+            this.txtRestante.Name = "txtRestante";
+            this.txtRestante.Size = new System.Drawing.Size(211, 27);
+            this.txtRestante.TabIndex = 18;
+            this.txtRestante.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // textBox9
+            // txtHora
             // 
-            this.textBox9.Location = new System.Drawing.Point(486, 831);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(211, 27);
-            this.textBox9.TabIndex = 19;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.txtHora.Location = new System.Drawing.Point(486, 831);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(211, 27);
+            this.txtHora.TabIndex = 19;
+            this.txtHora.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
-            // textBox10
+            // txtFechaEntrega
             // 
-            this.textBox10.Location = new System.Drawing.Point(223, 831);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(168, 27);
-            this.textBox10.TabIndex = 20;
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+            this.txtFechaEntrega.Location = new System.Drawing.Point(223, 831);
+            this.txtFechaEntrega.Name = "txtFechaEntrega";
+            this.txtFechaEntrega.Size = new System.Drawing.Size(168, 27);
+            this.txtFechaEntrega.TabIndex = 20;
+            this.txtFechaEntrega.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
-            // textBox11
+            // txtRFCCliente
             // 
-            this.textBox11.Location = new System.Drawing.Point(245, 430);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(457, 27);
-            this.textBox11.TabIndex = 21;
+            this.txtRFCCliente.Location = new System.Drawing.Point(245, 378);
+            this.txtRFCCliente.Name = "txtRFCCliente";
+            this.txtRFCCliente.Size = new System.Drawing.Size(457, 27);
+            this.txtRFCCliente.TabIndex = 21;
             // 
             // label10
             // 
@@ -290,19 +297,19 @@
             this.label12.Text = "IVA";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // textBox12
+            // txtIVA
             // 
-            this.textBox12.Location = new System.Drawing.Point(599, 718);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(98, 27);
-            this.textBox12.TabIndex = 26;
+            this.txtIVA.Location = new System.Drawing.Point(599, 718);
+            this.txtIVA.Name = "txtIVA";
+            this.txtIVA.Size = new System.Drawing.Size(98, 27);
+            this.txtIVA.TabIndex = 26;
             // 
-            // textBox13
+            // txtSubtotal
             // 
-            this.textBox13.Location = new System.Drawing.Point(599, 685);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(98, 27);
-            this.textBox13.TabIndex = 25;
+            this.txtSubtotal.Location = new System.Drawing.Point(599, 685);
+            this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.Size = new System.Drawing.Size(98, 27);
+            this.txtSubtotal.TabIndex = 25;
             // 
             // label13
             // 
@@ -323,12 +330,12 @@
             this.label14.TabIndex = 29;
             this.label14.Text = "Total";
             // 
-            // textBox14
+            // txtTotal
             // 
-            this.textBox14.Location = new System.Drawing.Point(599, 751);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(98, 27);
-            this.textBox14.TabIndex = 28;
+            this.txtTotal.Location = new System.Drawing.Point(599, 751);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(98, 27);
+            this.txtTotal.TabIndex = 28;
             // 
             // label15
             // 
@@ -341,99 +348,111 @@
             this.label15.Text = "Observaciones";
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // checkBox1
+            // checkBoxBordado
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(86, 918);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(89, 24);
-            this.checkBox1.TabIndex = 31;
-            this.checkBox1.Text = "Bordado";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxBordado.AutoSize = true;
+            this.checkBoxBordado.Location = new System.Drawing.Point(86, 918);
+            this.checkBoxBordado.Name = "checkBoxBordado";
+            this.checkBoxBordado.Size = new System.Drawing.Size(89, 24);
+            this.checkBoxBordado.TabIndex = 31;
+            this.checkBoxBordado.Text = "Bordado";
+            this.checkBoxBordado.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkBoxSerigrafia
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(195, 918);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(95, 24);
-            this.checkBox2.TabIndex = 32;
-            this.checkBox2.Text = "Serigrafía";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxSerigrafia.AutoSize = true;
+            this.checkBoxSerigrafia.Location = new System.Drawing.Point(195, 918);
+            this.checkBoxSerigrafia.Name = "checkBoxSerigrafia";
+            this.checkBoxSerigrafia.Size = new System.Drawing.Size(95, 24);
+            this.checkBoxSerigrafia.TabIndex = 32;
+            this.checkBoxSerigrafia.Text = "Serigrafía";
+            this.checkBoxSerigrafia.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkBoxVinil
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(308, 918);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(60, 24);
-            this.checkBox3.TabIndex = 33;
-            this.checkBox3.Text = "Vinil";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            this.checkBoxVinil.AutoSize = true;
+            this.checkBoxVinil.Location = new System.Drawing.Point(308, 918);
+            this.checkBoxVinil.Name = "checkBoxVinil";
+            this.checkBoxVinil.Size = new System.Drawing.Size(60, 24);
+            this.checkBoxVinil.TabIndex = 33;
+            this.checkBoxVinil.Text = "Vinil";
+            this.checkBoxVinil.UseVisualStyleBackColor = true;
+            this.checkBoxVinil.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // checkBox4
+            // checkBoxConfeccion
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(394, 918);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(105, 24);
-            this.checkBox4.TabIndex = 34;
-            this.checkBox4.Text = "Confección";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBoxConfeccion.AutoSize = true;
+            this.checkBoxConfeccion.Location = new System.Drawing.Point(394, 918);
+            this.checkBoxConfeccion.Name = "checkBoxConfeccion";
+            this.checkBoxConfeccion.Size = new System.Drawing.Size(105, 24);
+            this.checkBoxConfeccion.TabIndex = 34;
+            this.checkBoxConfeccion.Text = "Confección";
+            this.checkBoxConfeccion.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // checkBoxSublimado
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(594, 918);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(103, 24);
-            this.checkBox5.TabIndex = 35;
-            this.checkBox5.Text = "Sublimado";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBoxSublimado.AutoSize = true;
+            this.checkBoxSublimado.Location = new System.Drawing.Point(594, 918);
+            this.checkBoxSublimado.Name = "checkBoxSublimado";
+            this.checkBoxSublimado.Size = new System.Drawing.Size(103, 24);
+            this.checkBoxSublimado.TabIndex = 35;
+            this.checkBoxSublimado.Text = "Sublimado";
+            this.checkBoxSublimado.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // checkBoxDTF
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(521, 918);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(56, 24);
-            this.checkBox6.TabIndex = 36;
-            this.checkBox6.Text = "DTF";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBoxDTF.AutoSize = true;
+            this.checkBoxDTF.Location = new System.Drawing.Point(521, 918);
+            this.checkBoxDTF.Name = "checkBoxDTF";
+            this.checkBoxDTF.Size = new System.Drawing.Size(56, 24);
+            this.checkBoxDTF.TabIndex = 36;
+            this.checkBoxDTF.Text = "DTF";
+            this.checkBoxDTF.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(87, 483);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.Size = new System.Drawing.Size(615, 170);
+            this.dataGridView1.TabIndex = 37;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // CrearPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 1055);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.checkBoxDTF);
+            this.Controls.Add(this.checkBoxSublimado);
+            this.Controls.Add(this.checkBoxConfeccion);
+            this.Controls.Add(this.checkBoxVinil);
+            this.Controls.Add(this.checkBoxSerigrafia);
+            this.Controls.Add(this.checkBoxBordado);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtIVA);
+            this.Controls.Add(this.txtSubtotal);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtRFCCliente);
+            this.Controls.Add(this.txtFechaEntrega);
+            this.Controls.Add(this.txtHora);
+            this.Controls.Add(this.txtRestante);
+            this.Controls.Add(this.txtAnticipo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txttelefonoCliente);
+            this.Controls.Add(this.txtfechaPedido);
+            this.Controls.Add(this.txtciudadCliente);
+            this.Controls.Add(this.txtdireccionCliente);
+            this.Controls.Add(this.txtnombreCliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -441,14 +460,15 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtidPedido);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGuardarPedido);
             this.Name = "CrearPedido";
             this.Text = "CrearPedido";
             this.Load += new System.EventHandler(this.CrearPedido_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,9 +476,9 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnGuardarPedido;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtidPedido;
         private Panel panel1;
         private Label label2;
         private Label label3;
@@ -466,32 +486,33 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox txtnombreCliente;
+        private TextBox txtdireccionCliente;
+        private TextBox txtciudadCliente;
+        private TextBox txtfechaPedido;
+        private TextBox txttelefonoCliente;
         private Label label8;
         private Label label9;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
+        private TextBox txtAnticipo;
+        private TextBox txtRestante;
+        private TextBox txtHora;
+        private TextBox txtFechaEntrega;
+        private TextBox txtRFCCliente;
         private Label label10;
         private Label label11;
         private Label label12;
-        private TextBox textBox12;
-        private TextBox textBox13;
+        private TextBox txtIVA;
+        private TextBox txtSubtotal;
         private Label label13;
         private Label label14;
-        private TextBox textBox14;
+        private TextBox txtTotal;
         private Label label15;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
-        private CheckBox checkBox4;
-        private CheckBox checkBox5;
-        private CheckBox checkBox6;
+        private CheckBox checkBoxBordado;
+        private CheckBox checkBoxSerigrafia;
+        private CheckBox checkBoxVinil;
+        private CheckBox checkBoxConfeccion;
+        private CheckBox checkBoxSublimado;
+        private CheckBox checkBoxDTF;
+        private DataGridView dataGridView1;
     }
 }

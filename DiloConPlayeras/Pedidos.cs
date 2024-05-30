@@ -22,10 +22,10 @@ namespace DiloConPlayeras
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnNuevoPedido_Click(object sender, EventArgs e)
         {
-            CrearPedido pedidos = new CrearPedido();
-            pedidos.Show();
+            CrearPedido nuevopedido = new CrearPedido();
+            nuevopedido.Show();
         }
     }
 }
