@@ -28,6 +28,10 @@ namespace DiloConPlayeras
             productos.Show();
         }
 
-        
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Proveedores proveedores = new Proveedores();
+            proveedores.Show();
+        }
     }
 }

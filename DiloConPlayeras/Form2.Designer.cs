@@ -46,7 +46,6 @@
             toolStripSeparator2 = new ToolStripSeparator();
             exitToolStripMenuItem = new ToolStripMenuItem();
             productosToolStripMenuItem = new ToolStripMenuItem();
-            ventasToolStripMenuItem = new ToolStripMenuItem();
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             cerrarSesionToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
@@ -79,11 +78,11 @@
             menuStrip1.Dock = DockStyle.None;
             menuStrip1.GripStyle = ToolStripGripStyle.Visible;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, productosToolStripMenuItem, ventasToolStripMenuItem, proveedoresToolStripMenuItem, cerrarSesionToolStripMenuItem, salirToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, productosToolStripMenuItem, proveedoresToolStripMenuItem, cerrarSesionToolStripMenuItem, salirToolStripMenuItem });
             menuStrip1.Location = new Point(107, 44);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.System;
-            menuStrip1.Size = new Size(499, 28);
+            menuStrip1.Size = new Size(579, 28);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "Productos ";
             // 
@@ -172,17 +171,12 @@
             productosToolStripMenuItem.Text = "Productos ";
             productosToolStripMenuItem.Click += productosToolStripMenuItem_Click;
             // 
-            // ventasToolStripMenuItem
-            // 
-            ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            ventasToolStripMenuItem.Size = new Size(70, 24);
-            ventasToolStripMenuItem.Text = "Ventas ";
-            // 
             // proveedoresToolStripMenuItem
             // 
             proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
             proveedoresToolStripMenuItem.Size = new Size(109, 24);
             proveedoresToolStripMenuItem.Text = "Proveedores ";
+            proveedoresToolStripMenuItem.Click += proveedoresToolStripMenuItem_Click;
             // 
             // cerrarSesionToolStripMenuItem
             // 
@@ -242,7 +236,6 @@
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripMenuItem exitToolStripMenuItem;
         private ToolStripMenuItem productosToolStripMenuItem;
-        private ToolStripMenuItem ventasToolStripMenuItem;
         private ToolStripMenuItem proveedoresToolStripMenuItem;
         private ToolStripMenuItem cerrarSesionToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
